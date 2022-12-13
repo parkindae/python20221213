@@ -1,4 +1,4 @@
-#function1.py
+# function1.py
 # 함수를 정의
 def times(a,b):
     return a*b
