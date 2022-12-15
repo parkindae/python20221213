@@ -16,7 +16,7 @@ while (line != ''):
     line = f.readline()
 
 f.close() 
-g.close()
+g.close() 
 
 
 
