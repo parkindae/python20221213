@@ -8,7 +8,7 @@ hdr = {'User-agent':'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) Appl
 
 for n in range(0,10):
         #클리앙의 중고장터 주소 
-        data ='https://www.clien.net/service/board/sold?&od=T31&po=' + str(n)
+        data ='https://www.clien.net/service/board/sold?&od=T31&po=' + str(n) #주소
         #웹브라우져 헤더 추가 
         req = urllib.request.Request(data, \
                                     headers = hdr)
@@ -17,7 +17,7 @@ for n in range(0,10):
         page = data.decode('utf-8', 'ignore')
         soup = BeautifulSoup(page, 'html.parser')
         #속성들(attrs)
-        list = soup.find_all('span', attrs={'data-role':'list-title-text'})
+        list = soup.find_all('span', attrs={'data-role':'list-title-text'}) #속성
 
         # <span class="subject_fixed" data-role="list-title-text" title="아이폰 11 프로 (그린/256GB)">
         # 		아이폰 11 프로 (그린/256GB)
